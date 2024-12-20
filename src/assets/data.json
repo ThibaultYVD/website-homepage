@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "name": "Shopping Companion",
+            "imageUrl": "test.com",
+            "url": "https://shopping-companion.thibault-yvard.fr"
+        },
+        {
+            "name": "Météion",
+            "imageUrl": "test.com",
+            "url": "https://shopping-companion.thibault-yvard.fr"
+        }
+    ],
+    "quicklinks": [
+        {
+            "name": "Portainer",
+            "imageUrl": "test.com",
+            "url": "https://shopping-companion.thibault-yvard.fr",
+            "forAdministrator": true
+        },
+        {
+            "name": "Nginx Proxy Manager",
+            "imageUrl": "test.com",
+            "url": "https://shopping-companion.thibault-yvard.fr",
+            "forAdministrator": true
+        }
+    ]
+}
