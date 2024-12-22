@@ -2,27 +2,34 @@
     "projects": [
         {
             "name": "Shopping Companion",
-            "imageUrl": "test.com",
-            "url": "https://shopping-companion.thibault-yvard.fr"
+            "imageUrl": "./images/sc.png",
+            "appUrl": "https://shopping-companion.thibault-yvard.fr",
+            "githubUrl": "https://github.com/ThibaultYVD/shopping-companion"
         },
         {
             "name": "Météion",
-            "imageUrl": "test.com",
-            "url": "https://shopping-companion.thibault-yvard.fr"
+            "imageUrl": "./images/meteion_icon.png",
+            "appUrl": "https://github.com/ThibaultYVD/meteion",
+            "githubUrl": "https://github.com/ThibaultYVD/meteion"
         }
     ],
     "quicklinks": [
         {
             "name": "Portainer",
-            "imageUrl": "test.com",
-            "url": "https://shopping-companion.thibault-yvard.fr",
+            "imageUrl": "./images/portainer.png",
+            "appUrl": "https://portainer.thibault-yvard.fr",
             "forAdministrator": true
         },
         {
             "name": "Nginx Proxy Manager",
-            "imageUrl": "test.com",
-            "url": "https://shopping-companion.thibault-yvard.fr",
+            "imageUrl": "./images/nginx-proxy-manager.png",
+            "appUrl": "https://npm.thibault-yvard.fr",
             "forAdministrator": true
+        },
+        {
+            "name": "Nextcloud",
+            "imageUrl": "./images/nextcloud.png",
+            "appUrl": "https://nextcloud.thibault-yvard.fr"
         }
     ]
 }
