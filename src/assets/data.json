@@ -8,7 +8,7 @@
         },
         {
             "name": "Météion",
-            "imageUrl": "./images/meteion_icon.png",
+            "imageUrl": "./images/meteion.png",
             "appUrl": "https://github.com/ThibaultYVD/meteion",
             "githubUrl": "https://github.com/ThibaultYVD/meteion"
         }
@@ -30,6 +30,11 @@
             "name": "Nextcloud",
             "imageUrl": "./images/nextcloud.png",
             "appUrl": "https://nextcloud.thibault-yvard.fr"
+        },
+        {
+            "name": "Stirling PDF",
+            "imageUrl":"./images/stirling.png",
+            "appUrl":"https://pdf.thibault-yvard.fr/"
         }
     ]
 }

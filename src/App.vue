@@ -56,7 +56,8 @@ body {
   font-family: sans-serif;
   height: 99%;
   padding: 4px;
-  background-color: rgb(244, 250, 255);
+  background: linear-gradient(to bottom right, #dceeff, #8abce6);
+
 }
 
 #app {
@@ -74,8 +75,6 @@ body {
 }
 
 .top-container {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
   padding: 25px;
   border-radius: 10px;
 }
@@ -90,7 +89,7 @@ body {
   width: 50%;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
   padding: 0 20px 20px 20px;
 }
 </style>
