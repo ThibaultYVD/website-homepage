@@ -5,10 +5,12 @@
                 <img :src="item.imageUrl" alt="Logo" class="item-logo" />
                 <span>{{ item.name }}</span>
             </a>
-            <label class="administrator-tag" v-if="item.forAdministrator">Admin</label>
             <a v-if="item.githubUrl" :href="item.githubUrl" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
+            <label class="tag administrator" v-if="item.forAdministrator">Admin</label>
+            <label class="tag limited" v-if="item.limited">Limited</label>
+            <label class="tag free-to-use" v-if="item.freeToUse">Free to use</label>
         </li>
     </ul>
 </template>
@@ -78,14 +80,25 @@ i {
     border-radius: 5px;
 }
 
-.administrator-tag {
-    background-color: darksalmon;
+.tag {
     color: black;
     font-style: italic;
     font-size: 12px;
     padding: 2px 5px;
     border-radius: 5px;
     float: right;
+}
+
+.administrator {
+    background-color: rgb(255, 204, 186);
+}
+
+.free-to-use {
+    background-color: rgb(232, 252, 221);
+}
+
+.limited {
+    background-color: rgb(221, 234, 252);
 }
 
 .list-item a:hover {

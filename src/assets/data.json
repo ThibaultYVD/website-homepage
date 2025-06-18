@@ -4,13 +4,15 @@
             "name": "Shopping Companion",
             "imageUrl": "./images/sc.png",
             "appUrl": "https://shopping-companion.thibault-yvard.fr",
-            "githubUrl": "https://github.com/ThibaultYVD/shopping-companion"
+            "githubUrl": "https://github.com/ThibaultYVD/shopping-companion",
+            "freeToUse": true
         },
         {
             "name": "Météion",
             "imageUrl": "./images/meteion.png",
             "appUrl": "https://github.com/ThibaultYVD/meteion",
-            "githubUrl": "https://github.com/ThibaultYVD/meteion"
+            "githubUrl": "https://github.com/ThibaultYVD/meteion",
+            "freeToUse": true
         }
     ],
     "quicklinks": [
@@ -29,12 +31,20 @@
         {
             "name": "Nextcloud",
             "imageUrl": "./images/nextcloud.png",
-            "appUrl": "https://nextcloud.thibault-yvard.fr"
+            "appUrl": "https://nextcloud.thibault-yvard.fr",
+            "limited": true
         },
         {
             "name": "Stirling PDF",
-            "imageUrl":"./images/stirling.png",
-            "appUrl":"https://pdf.thibault-yvard.fr/"
+            "imageUrl": "./images/stirling.png",
+            "appUrl": "https://pdf.thibault-yvard.fr/",
+            "freeToUse": true
+        },
+        {
+            "name": "Uptime Kuma",
+            "imageUrl": "null",
+            "appUrl": "https://uptime.thibault-yvard.fr",
+            "limited": true
         }
     ]
 }

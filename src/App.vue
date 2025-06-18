@@ -3,21 +3,17 @@
     <AppNavbar />
     <div class="main-container">
       <div class="top-container">
-        Hi and welcome on my website! Here you can find my projects and the services hosted on this
+        Welcome on my website! Here you can find my projects and the services hosted on this
         server. If you want to learn more about me and my projects, please take a look at my Linkedin and my Github
         accounts.
       </div>
       <div class="center-container">
         <div class="projects-container">
-          <h1>Projects</h1>
-          <p>
-            Those projects are developed by me and run on this server. You can try them if you want!
-          </p>
+          <h1 class="title">Projects</h1>
           <AppList :items="projects" />
         </div>
         <div class="quicklinks-container">
-          <h1>Services</h1>
-          <p>Those services are hosted on my server. Only verified people can use them.</p>
+          <h1 class="title">Services</h1>
           <AppList :items="quicklinks" />
         </div>
       </div>
@@ -29,7 +25,6 @@
 import AppNavbar from "./components/AppNavbar.vue";
 import AppList from "./components/AppList.vue";
 
-// Importation du JSON local
 import data from "@/assets/data.json";
 
 export default {
@@ -56,7 +51,7 @@ body {
   font-family: sans-serif;
   height: 99%;
   padding: 4px;
-  background: linear-gradient(to bottom right, #dceeff, #8abce6);
+  background: #e8e8e8;
 
 }
 
@@ -72,6 +67,11 @@ body {
   padding: 4px 50px;
   gap: 50px;
   width: 90%;
+}
+
+.title {
+  border-bottom: 4px rgba(0, 0, 0, 0.8) solid;
+  border-radius: 4px;
 }
 
 .top-container {
@@ -91,5 +91,31 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
   padding: 0 20px 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    flex-direction: column;
+  }
+
+  .center-container {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+  }
+
+  .projects-container,
+  .quicklinks-container {
+    width: 100%;
+  }
+
+  .main-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .center-container div {
+    width: 100%;
+  }
 }
 </style>
