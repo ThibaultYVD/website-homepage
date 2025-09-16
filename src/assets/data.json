@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "name": "Météion",
+            "imageUrl": "./images/meteion.png",
+            "appUrl": "https://github.com/ThibaultYVD/meteion",
+            "githubUrl": "https://github.com/ThibaultYVD/meteion",
+            "freeToUse": true
+        },
+        {
             "name": "Shopping Companion",
             "imageUrl": "./images/sc.png",
             "appUrl": "https://shopping-companion.thibault-yvard.fr",
@@ -8,11 +15,10 @@
             "freeToUse": true
         },
         {
-            "name": "Météion",
-            "imageUrl": "./images/meteion.png",
-            "appUrl": "https://github.com/ThibaultYVD/meteion",
-            "githubUrl": "https://github.com/ThibaultYVD/meteion",
-            "freeToUse": true
+            "name": "Moglin",
+            "imageUrl": "./images/moglin.png",
+            "githubUrl": "https://github.com/ThibaultYVD/Moglin",
+            "limited": true
         }
     ],
     "quicklinks": [
