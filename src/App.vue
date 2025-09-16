@@ -26,9 +26,6 @@
             </div>
           </div>
         </div>
-        <div class="timeline-section">
-          <CareerTimeline />
-        </div>
       </div>
     </div>
   </div>
@@ -37,7 +34,6 @@
 <script>
 import AppNavbar from "./components/AppNavbar.vue";
 import AppList from "./components/AppList.vue";
-import CareerTimeline from "./components/CareerTimeline.vue";
 
 import data from "@/assets/data.json";
 
@@ -46,7 +42,6 @@ export default {
   components: {
     AppNavbar,
     AppList,
-    CareerTimeline,
   },
   data() {
     return {
