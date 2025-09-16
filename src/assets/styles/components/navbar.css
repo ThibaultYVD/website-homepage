@@ -1,4 +1,6 @@
 .navbar {
+    position: sticky;
+    top: var(--spacing-md);
     background-color: var(--navbar-bg);
     color: var(--text-color-white);
     border-radius: 12px;
@@ -159,6 +161,8 @@
 
 @media screen and (max-width: 1024px) {
     .navbar {
+        position: relative;
+        top: auto;
         min-width: 250px;
         padding: 1.25rem;
     }
@@ -166,6 +170,8 @@
 
 @media screen and (max-width: 768px) {
     .navbar {
+        position: relative;
+        top: auto;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;

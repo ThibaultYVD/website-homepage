@@ -26,6 +26,9 @@
             </div>
           </div>
         </div>
+        <div class="timeline-section">
+          <CareerTimeline />
+        </div>
       </div>
     </div>
   </div>
@@ -34,6 +37,7 @@
 <script>
 import AppNavbar from "./components/AppNavbar.vue";
 import AppList from "./components/AppList.vue";
+import CareerTimeline from "./components/CareerTimeline.vue";
 
 import data from "@/assets/data.json";
 
@@ -42,6 +46,7 @@ export default {
   components: {
     AppNavbar,
     AppList,
+    CareerTimeline,
   },
   data() {
     return {
@@ -65,14 +70,12 @@ export default {
 }
 
 .timeline-section {
-  margin-top: var(--spacing-lg);
-  height: 400px;
+  width: 100%;
 }
 
 .list-scroll-container {
   padding: 0 var(--spacing-lg) var(--spacing-lg);
   overflow-y: auto;
-  height: 100%;
 }
 
 .title-container {
@@ -96,9 +99,7 @@ export default {
 @media screen and (max-width: 768px) {
 
   .projects-container,
-  .quicklinks-container {
-    max-height: 500px;
-  }
+  .quicklinks-container {}
 
   .title {
     font-size: 1.25rem;
@@ -108,9 +109,7 @@ export default {
 @media screen and (max-width: 480px) {
 
   .projects-container,
-  .quicklinks-container {
-    max-height: 400px;
-  }
+  .quicklinks-container {}
 }
 
 :root {
@@ -131,7 +130,6 @@ export default {
   --border-radius-sm: 8px;
   --max-width: 1400px;
   --header-height: 90px;
-  --list-max-height: calc(100vh - var(--header-height) - 12rem);
 }
 
 /* Scrollbar personnalisée */
@@ -163,26 +161,23 @@ body {
   background: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
-  min-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #app {
-  display: flex;
-  min-height: calc(100vh - var(--spacing-md) * 2);
-  /* Hauteur minimale en tenant compte du padding */
+  display: grid;
+  grid-template-columns: 320px 1fr;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--spacing-md);
   gap: var(--spacing-xl);
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Wrapper pour centrer le contenu verticalement */
 .main-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 body {
@@ -192,30 +187,25 @@ body {
   background: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
-  height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #app {
-  display: flex;
-  height: calc(100vh - var(--spacing-md) * 2);
-  /* Soustrait le padding haut et bas */
+  display: grid;
+  grid-template-columns: 320px 1fr;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--spacing-md);
   gap: var(--spacing-xl);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .main-container {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-lg);
-  overflow: hidden;
+  overflow: visible;
   min-width: 0;
-  max-height: calc(100vh - var(--header-height) - var(--spacing-md) * 2);
-  height: 100%;
 }
 
 .top-container {
@@ -252,7 +242,6 @@ body {
 .list-scroll-container {
   padding: 0 var(--spacing-lg) var(--spacing-lg);
   overflow-y: auto;
-  height: 100%;
 }
 
 .title-container {
@@ -281,6 +270,7 @@ body {
   }
 
   #app {
+    grid-template-columns: 1fr;
     padding: var(--spacing-md);
   }
 
@@ -305,7 +295,7 @@ body {
   }
 
   #app {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     height: auto;
     min-height: auto;
     padding: 0;
@@ -328,7 +318,6 @@ body {
 
   .projects-container,
   .quicklinks-container {
-    max-height: 500px;
     /* Hauteur fixe sur mobile */
   }
 
@@ -340,10 +329,6 @@ body {
     padding: 0 var(--spacing-md) var(--spacing-md);
   }
 
-  .timeline-section {
-    height: 350px;
-    margin-top: var(--spacing-md);
-  }
 }
 
 /* Petit Mobile */
@@ -353,17 +338,11 @@ body {
   }
 
   .projects-container,
-  .quicklinks-container {
-    max-height: 400px;
-  }
+  .quicklinks-container {}
 
   .list-scroll-container {
     padding: 0 var(--spacing-sm) var(--spacing-sm);
   }
 
-  .timeline-section {
-    height: 300px;
-    margin-top: var(--spacing-sm);
-  }
 }
 </style>
