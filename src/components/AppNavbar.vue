@@ -32,6 +32,10 @@
                         <i class="fa-brands fa-linkedin"></i>
                         <span>Linkedin</span>
                     </a>
+                    <a href="https://www.linkedin.com/in/thibault-yvard/" class="network-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contact@thibault-yvard.fr</span>
+                    </a>
                 </div>
             </div>
         </div>
